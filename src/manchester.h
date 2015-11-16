@@ -14,7 +14,7 @@ static const Manchester_Bit_t High  = 1U;
 static const Manchester_Bit_t Undef = 2U;
 
 /* Prototypes */
-Manchester_Bit_t Manchester_Process_Edge( Manchester_Bit_t clock,
-                                          Manchester_Bit_t data );
+Manchester_Bit_t Manchester_Process_Edge( const Manchester_Bit_t clock,
+                                          const Manchester_Bit_t data );
 
 #endif /* MANCHESTER_H */
