@@ -33,6 +33,9 @@ int main( int argc, char** argv)
     return retval;
 }
 
+/* Process all lines from stdin. If a failure is detected,
+ *   return a nonzero value
+ */
 static int process_from_stdin(void)
 {
     char single_line[4]; // "0,1\n"
@@ -50,12 +53,16 @@ static int process_from_stdin(void)
         else
         {
             fprintf(stderr, "====>Bad Line!\n");
+            return bad_return_value;
         }
     }
 
     return good_return_value;
 }
 
+/* Parse a single line. Perform error checking, if form is not
+ *   'n,m', return false
+ */
 static bool parse_input_line(const char* input,
                                    Manchester_Bit_t* clock,
                                    Manchester_Bit_t* data)

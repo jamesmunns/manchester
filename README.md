@@ -28,4 +28,4 @@ Or manually input as such:
     $ 1,1
         1,1 => 0
 
-You can hit Control-C to end the manual input stream.
+You can hit Control-C or Enter with no data to end the manual input stream.
