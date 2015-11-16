@@ -17,15 +17,15 @@ The example input can be run with the following command:
 Arbitrary data can be provided from a file as such
 
     $ make
-    $ demo < YOUR_FILE.txt
+    $ ./demo < YOUR_FILE.txt
 
 Or manually input as such:
 
     $ make
-    $ demo
-    $ 0,1
+    $ ./demo
+      0,1
         0,1 => 1
-    $ 1,1
+      1,1
         1,1 => 0
 
 You can hit Control-C or Enter with no data to end the manual input stream.
