@@ -32,4 +32,4 @@ Or manually input as such:
 You can hit Control-C or Enter with no data to end the manual input stream.
 
 ## Data Format
-Input should be in the form <clock>, <data>, and an output value will be provided
+Input should be in the form "`<clock>`, `<data>`\n", and an output value will be provided
